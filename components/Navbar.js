@@ -1,17 +1,17 @@
 import React from "react";
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
-import Menu from '@mui/material/Menu';
-import MenuIcon from '@mui/icons-material/Menu';
-import Container from '@mui/material/Container';
-import Button from '@mui/material/Button';
-import MenuItem from '@mui/material/MenuItem';
-import Logo from '../public/Logo.png';
+import AppBar from "@mui/material/AppBar";
+import Box from "@mui/material/Box";
+import Toolbar from "@mui/material/Toolbar";
+import IconButton from "@mui/material/IconButton";
+import Typography from "@mui/material/Typography";
+import Menu from "@mui/material/Menu";
+import MenuIcon from "@mui/icons-material/Menu";
+import Container from "@mui/material/Container";
+import Button from "@mui/material/Button";
+import MenuItem from "@mui/material/MenuItem";
+import Logo from "../public/Logo.png";
 
-const pages = ['Featured Products', 'e-Brochure', 'Contact Us'];
+const pages = ["Featured Products", "e-Brochure", "Contact Us"];
 
 const NavBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -25,14 +25,17 @@ const NavBar = () => {
   };
 
   return (
-    <AppBar position="static" style={{backgroundColor: "rgb(255,211,51)"}}>
+    <AppBar position="static" style={{ backgroundColor: "rgb(255,211,51)" }}>
       <Container maxWidth="xl">
-        <Toolbar disableGutters sx={{ display: 'flex', justifyContent: 'space-between' }}>
+        <Toolbar
+          disableGutters
+          sx={{ display: "flex", justifyContent: "space-between" }}
+        >
           <Box
             component="img"
             sx={{
-            height: 64,
-            order: 1,
+              height: 64,
+              order: 1,
             }}
             alt="Your logo."
             src={Logo.src}
@@ -46,12 +49,12 @@ const NavBar = () => {
               mr: 2,
               order: 2,
               flexGrow: 1,
-              display: { xs: 'none', md: 'flex' },
-              fontFamily: 'Inter, sans-serif',
+              display: { xs: "none", md: "flex" },
+              fontFamily: "Inter, sans-serif",
               fontWeight: 700,
-              letterSpacing: '.1rem',
-              color: 'black',
-              textDecoration: 'none',
+              letterSpacing: ".1rem",
+              color: "black",
+              textDecoration: "none",
             }}
           >
             Supreme Evershine
@@ -64,30 +67,50 @@ const NavBar = () => {
             sx={{
               mr: 2,
               order: 2,
-              display: { xs: 'flex', md: 'none' },
-              fontFamily: 'Inter, sans-serif',
+              display: { xs: "flex", md: "none" },
+              fontFamily: "Inter, sans-serif",
               fontWeight: 700,
               flexGrow: 1,
-              letterSpacing: '.1rem',
-              color: 'black',
-              textDecoration: 'none',
+              letterSpacing: ".1rem",
+              color: "black",
+              textDecoration: "none",
             }}
           >
             Supreme Evershine
           </Typography>
-          <Box sx={{ display: { xs: 'none', md: 'flex' }, order: 3, scrollBehavior: "smooth"}}>
+          <Box
+            sx={{
+              display: { xs: "none", md: "flex" },
+              order: 3,
+              scrollBehavior: "smooth",
+            }}
+          >
             {pages.map((page) => (
               <Button
                 href={`#${page}`}
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'black', display: 'block', textTransform: 'capitalize', fontWeight: '700', fontSize: '1rem'}}
+                sx={{
+                  my: 2,
+                  color: "black",
+                  display: "block",
+                  textTransform: "capitalize",
+                  fontWeight: "700",
+                  fontSize: "1rem",
+                  textDecoration: "none",
+                }}
               >
                 {page}
               </Button>
             ))}
           </Box>
-          <Box sx={{ display: { xs: 'flex', md: 'none' }, order: 4, fontSize: '2rem' }}>
+          <Box
+            sx={{
+              display: { xs: "flex", md: "none" },
+              order: 4,
+              fontSize: "2rem",
+            }}
+          >
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -102,23 +125,41 @@ const NavBar = () => {
               id="menu-appbar"
               anchorEl={anchorElNav}
               anchorOrigin={{
-                vertical: 'bottom',
-                horizontal: 'right',
+                vertical: "bottom",
+                horizontal: "right",
               }}
               keepMounted
               transformOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
+                vertical: "top",
+                horizontal: "right",
               }}
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
               sx={{
-                display: { xs: 'block', md: 'none', textTransform: 'capitalize', fontWeight: '700'},
+                display: {
+                  xs: "block",
+                  md: "none",
+                  textTransform: "capitalize",
+                  fontWeight: "700",
+                },
               }}
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                  <Button
+                    href={`#${page}`}
+                    sx={{
+                      my: 0.5,
+                      color: "black",
+                      display: "block",
+                      textTransform: "capitalize",
+                      fontWeight: "700",
+                      fontSize: "0.80rem",
+                      textDecoration: "none",
+                    }}
+                  >
+                    {page}
+                  </Button>
                 </MenuItem>
               ))}
             </Menu>

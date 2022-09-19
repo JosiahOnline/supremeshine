@@ -7,7 +7,12 @@ import { Box, Button, Container, Typography } from "@mui/material";
 import Link from "next/link";
 import { Grid } from "@material-ui/core";
 
+import { createTheme, ThemeProvider } from "@material-ui/core/styles";
+import { responsiveFontSizes } from "@mui/material";
+
 export default function Details() {
+  let theme = createTheme();
+  theme = responsiveFontSizes(theme);
   const { query } = useRouter();
   const id = query.id;
 
@@ -41,7 +46,8 @@ export default function Details() {
           if (name === id) {
             return (
               <>
-                <Container maxWidth="lg" key={index} sx={{ padding: "50px 0" }}>
+                <Container maxWidth="lg" key={index} sx={{ padding: "50px 15px" }}>
+                <ThemeProvider theme={theme}>
                   <Box
                     component="div"
                     sx={{
@@ -215,6 +221,7 @@ export default function Details() {
                       </Grid>
                     </Grid>
                   </Box>
+                  </ThemeProvider>
                 </Container>
               </>
             );

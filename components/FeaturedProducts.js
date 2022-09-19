@@ -14,9 +14,10 @@ import styles from "../styles/General.module.css";
 
 import products from "../src/data.json";
 
-import { createTheme } from "@mui/material";
+import { createTheme, responsiveFontSizes } from "@mui/material";
+import { Grid } from "@material-ui/core";
 
-const theme = createTheme({
+let theme = createTheme({
   components: {
     MuiTab: {
       styleOverrides: {
@@ -30,8 +31,7 @@ const theme = createTheme({
           },
           "&.MuiTab-textColorPrimary": {
             color: "black",
-            fontSize:  "1.5rem",
-            marginRight: "20px",
+     
             "&.Mui-selected": {
               color: "rgb(255,211,51)",
               border: "1px solid",
@@ -43,6 +43,9 @@ const theme = createTheme({
     },
   },
 });
+
+
+theme = responsiveFontSizes(theme);
 
 export default function LabTabs() {
   const [value, setValue] = React.useState("1");
@@ -70,7 +73,6 @@ export default function LabTabs() {
           border: 0,
           borderColor: "rgb(255,211,51)",
           borderRadius: "15px",
-          padding: "20px",
           display: "flex",
           justifyContent: "flex-start",
           flexDirection: "column",
@@ -114,23 +116,20 @@ export default function LabTabs() {
                   <Tab label="Category Six" value="6" />
                   <Tab label="Category Seven" value="7" /> */}
                 </TabList>
-              </ThemeProvider>
+                </ThemeProvider>
             </Box>
             {products.map((product, index) => (
               <TabPanel value={product.id} key={index}>
-                <Box
-                  sx={{
-                    display: "flex",
-                    flexDirection: "row",
-                    justifyContent: "space-around",
-                    gap: "20px",
-                    flexWrap: "wrap",
-                  }}
+                <Grid
+                  container direction="row" justifyContent="center" spacing={2} 
                 >
                   {product.categories.map((category, index) => (
-                    <FeaturedCard category={category} key={index} />
+                    <>
+                    <Grid item key={index} xs={6} md={3}>
+                      <FeaturedCard category={category} key={index} />
+                    </Grid></>
                   ))}
-                </Box>
+                </Grid>
               </TabPanel>
             ))}
           </TabContext>
