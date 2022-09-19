@@ -1,4 +1,6 @@
-html,
+html {
+  scroll-behavior: smooth;
+}
 body {
   padding: 0;
   margin: 0;
@@ -13,6 +15,19 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Inter', sans-serif;
+  src: url("/public/fonts/Inter-Medium.woff2");
+  format: ("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Playfair Display', serif;
+  src: url("/public/fonts/PlayfairDisplay-Medium.woff2");
+  format: ("woff2");
+  font-display: swap;
 }
 
 @media (prefers-color-scheme: dark) {

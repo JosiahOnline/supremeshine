@@ -1,0 +1,62 @@
+[
+  {
+    "id": "1",
+    "brand": "SK PUMP",
+    "categories": [
+      {
+        "id": 1,
+        "name": "SK & SKL Series",
+        "alt": "SK & SKL Series",
+        "image": "../skseries/Skpseries.png"
+      },
+      {
+        "id": 2,
+        "name": "SKP SERIES",
+        "alt": "SKP SERIES",
+        "image": "../skseries/Skpseries.png"
+      },
+      {
+        "id": 3,
+        "name": "SKLW SERIES",
+        "alt": "SKLW SERIES",
+        "image": "../skseries/Sklwseries.png"
+      },
+      {
+        "id": 4,
+        "name": "SKWT SERIES",
+        "alt": "SKWT SERIES",
+        "image": "../skseries/Skwtseries.png"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "brand": "SE-Tech",
+    "categories": [
+      {
+        "id": 5,
+        "name": "Cold Water Horizontal Woltman Flowmeter",
+        "alt": "Cold Water Horizontal Woltman Flowmeter",
+        "image": "../setech/Cold Water Horizontal Woltman Flowmeter.png"
+      },
+      {
+        "id": 6,
+        "name": "Electromagnetic Flowmeter",
+        "alt": "Electromagnetic Flowmeter",
+        "image": "../setech/Electromagnetic Flowmeter.png"
+      },
+      {
+        "id": 7,
+        "name": "Flowmeter Controller",
+        "alt": "Flowmeter Controller",
+        "image": "../setech/Flowmeter Controller.png"
+      },
+      {
+        "id": 7,
+        "name": "Nut Cracker",
+        "alt": "Nut Cracker",
+        "image": "../setech/Nut Cracker.png"
+      }
+    ]
+  }
+]
