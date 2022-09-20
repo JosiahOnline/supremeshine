@@ -6,7 +6,6 @@ import CssBaseline from '@mui/material/CssBaseline';
 import { CacheProvider } from '@emotion/react';
 import theme from '../src/theme';
 import createEmotionCache from '../src/createEmotionCache';
-import Footer from '../components/Footer';
 
 
 // Client-side cache shared for the whole session
@@ -32,7 +31,6 @@ export default function MyApp(props) {
 				
 				<CssBaseline />
 				<Component {...pageProps} />
-				<Footer />
 			</ThemeProvider>
 		</CacheProvider>
 	);

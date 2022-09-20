@@ -16,12 +16,6 @@ export default function Details() {
   const { query } = useRouter();
   const id = query.id;
 
-  //  products.map((item) => {
-  //     if (item.length > 0) {
-  //       item +=1
-  //       return (
-  //             console.log(item)
-  //       )}})
   return (
     <div>
       {products.map(
@@ -46,7 +40,7 @@ export default function Details() {
           if (name === id) {
             return (
               <>
-                <Container maxWidth="lg" key={index} sx={{ padding: "50px 15px" }}>
+                <Container maxWidth="md" key={index} sx={{ padding: "50px 15px" }}>
                 <ThemeProvider theme={theme}>
                   <Box
                     component="div"
@@ -55,7 +49,7 @@ export default function Details() {
                       justifyContent: "flex-start",
                       gap: "10px",
                       alignItems: "center",
-                      marginBottom: "50px",
+                      marginBottom: { md: "50px", xs: "20px" },
                     }}
                   >
                     <Link href="/#Featured Products">
@@ -87,7 +81,7 @@ export default function Details() {
                       justifyContent="space-around"
                       alignItems="flex-start"
                     >
-                      <Grid item>
+                      <Grid item xs={12} md={6}>
                         <Box
                           sx={{
                             border: 1,
@@ -98,8 +92,8 @@ export default function Details() {
                         >
                           <Image
                             src={image}
-                            alt="Picture of the author"
-                            width={260}
+                            alt={name}
+                            width={200}
                             height={200}
                             layout="responsive"
                           />
@@ -135,7 +129,7 @@ export default function Details() {
                             gap: "50px",
                           }}
                         >
-                          <Box sx={{ paddingLeft: "30px" }}>
+                          <Box sx={{ marginTop:  { md: "10px", xs: "50px" }, paddingLeft: "30px" }}>
                             <Typography variant="h4" gutterBottom>
                               Features
                             </Typography>

@@ -9,7 +9,7 @@ let theme = createTheme();
 theme = responsiveFontSizes(theme);
 export default function Brochure() {
   return (
-    <Container maxWidth="lg">
+    <Container maxWidth="md">
       <ThemeProvider theme={theme}>
         <Box
           container
@@ -66,12 +66,13 @@ export default function Brochure() {
 
             <Grid item xs={10} md={9}>
               <Typography component="div" align="left" variant="h4">
-                Our e-Brochure Product Catalogue 2022 is out! Click below and
-                get a copy!
+                Our e-Brochure Product Catalogue 2022 is out! Find out more
+                about our products and what we offer in our latest e-Brochure. 
+                Simply click below download button and fill out your details.
               </Typography>
               <Button
                 variant="contained"
-                href={eBrochure.src}
+                href="https://forms.gle/wPacsBn4KE2n1QyB9"
                 target="_blank"
                 color="secondary"
                 sx={{
@@ -79,7 +80,7 @@ export default function Brochure() {
                   p: 1.5,
                 }}
               >
-                Click Here
+                Download
               </Button>
             </Grid>
           </Grid>

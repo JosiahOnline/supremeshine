@@ -7,6 +7,7 @@ import FeaturedProducts from "../components/FeaturedProducts";
 import TrustedBy from "../components/TrustedBy";
 import { Fragment } from "react";
 import Brochure from '../components/Brochure'
+import Footer from "../components/Footer";
 
 export default function Home() {
 	return (
@@ -22,6 +23,7 @@ export default function Home() {
 			<TrustedBy />
 			<FeaturedProducts />
 			<Brochure />
+			<Footer />
 		</div>
     </Fragment>
 	);

@@ -3,15 +3,15 @@ import { red } from '@mui/material/colors';
 
 // Create a theme instance.
 const theme = createTheme({
-	components: {
-    MuiCssBaseline: {
-      styleOverrides: {
-        html: {
-          scrollBehavior: 'smooth',
-          }
-        }
-      }
-    },
+	// components: {
+  //   MuiCssBaseline: {
+  //     styleOverrides: {
+  //       html: {
+  //         scrollBehavior: 'smooth',
+  //         }
+  //       }
+  //     }
+  //   },
 	palette: {
 		primary: {
 			main: '#2196f3',

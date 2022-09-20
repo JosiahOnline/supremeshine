@@ -57,7 +57,7 @@ export default function LabTabs() {
   return (
     <Container
       id="Featured Products"
-      maxWidth="lg"
+      maxWidth="md"
       sx={{
         marginTop: "40px",
         marginBottom: "40px",

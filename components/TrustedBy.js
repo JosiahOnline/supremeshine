@@ -28,18 +28,18 @@ export default function TrustedBy(props) {
   });
   return (
     <ThemeProvider theme={theme}>
-    <Box sx={{ width: "100%", margin: "30px 0", backgroundColor: "#f5f5f5", padding:"50px 0" }}>
+    <Box sx={{ margin: "30px 0", backgroundColor: "#f5f5f5", padding:"50px 0" }}>
       <Grid container direction="column" justifyContent="center" alignItems="center"
       >
         <Typography
-          variant="h1"
+          variant="h2"
           component="div"
           sx={{ color: "rgb(255,211,51)", fontWeight: "bold", textAlign:"center"}}
         >
           TRUSTED BY
         </Typography>
         <Typography
-          variant="h3"
+          variant="h4"
           component="div"
           sx={{ color: "#152934", fontWeight: "bold", textAlign:"center"}}
         >
@@ -47,7 +47,7 @@ export default function TrustedBy(props) {
         </Typography>
       </Grid>
       <Grid container justifyContent="center" alignItems="center">
-        <Grid item xs={6} md={4}>
+        <Grid item xs={6} md={3}>
           <Grow
             appear={true}
             direction="down"
@@ -70,7 +70,7 @@ export default function TrustedBy(props) {
             </Box>
           </Grow>
         </Grid>
-        <Grid item xs={6} md={4}>
+        <Grid item xs={6} md={3}>
           <Grow
             appear={true}
             direction="down"
@@ -91,7 +91,7 @@ export default function TrustedBy(props) {
             /></Box>
           </Grow>
         </Grid>
-        <Grid item xs={6} md={4}>
+        <Grid item xs={6} md={3}>
           <Grow
             appear={true}
             direction="down"
@@ -112,7 +112,7 @@ export default function TrustedBy(props) {
             /></Box>
           </Grow>
         </Grid>
-        <Grid item xs={6} md={4}>
+        <Grid item xs={6} md={3}>
           <Grow
             appear={true}
             direction="down"
@@ -133,7 +133,7 @@ export default function TrustedBy(props) {
             /></Box>
           </Grow>
         </Grid>
-        <Grid item xs={6} md={4}>
+        <Grid item xs={6} md={3}>
           <Grow
             appear={true}
             direction="down"
@@ -154,7 +154,7 @@ export default function TrustedBy(props) {
             /></Box>
           </Grow>
         </Grid>
-        <Grid item xs={6} md={4}>
+        <Grid item xs={6} md={3}>
           <Grow
             appear={true}
             direction="down"
@@ -175,7 +175,7 @@ export default function TrustedBy(props) {
             /></Box>
           </Grow>
         </Grid>
-        <Grid item xs={6} md={4}>
+        <Grid item xs={6} md={3}>
           <Grow
             appear={true}
             direction="down"
@@ -196,7 +196,7 @@ export default function TrustedBy(props) {
             /></Box>
           </Grow>
         </Grid>
-        <Grid item xs={6} md={4}>
+        <Grid item xs={6} md={3}>
           <Grow
             appear={true}
             direction="down"
@@ -217,7 +217,7 @@ export default function TrustedBy(props) {
             /></Box>
           </Grow>
         </Grid>
-        <Grid item xs={6} md={4}>
+        <Grid item xs={6} md={3}>
           <Grow
             appear={true}
             direction="down"

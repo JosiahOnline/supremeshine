@@ -11,7 +11,8 @@ import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import Logo from "../public/Logo.png";
 
-const pages = ["Featured Products", "e-Brochure", "Contact Us"];
+
+const pages = ["Featured Products", "e-Brochure"];
 
 const NavBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -26,7 +27,7 @@ const NavBar = () => {
 
   return (
     <AppBar position="static" style={{ backgroundColor: "rgb(255,211,51)" }}>
-      <Container maxWidth="xl">
+      <Container maxWidth="md">
         <Toolbar
           disableGutters
           sx={{ display: "flex", justifyContent: "space-between" }}
@@ -87,7 +88,8 @@ const NavBar = () => {
           >
             {pages.map((page) => (
               <Button
-                href={`#${page}`}
+                href={`/#${page}`}
+                scroll={false}
                 key={page}
                 onClick={handleCloseNavMenu}
                 sx={{
@@ -148,6 +150,7 @@ const NavBar = () => {
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
                   <Button
                     href={`#${page}`}
+                    scroll={false}
                     sx={{
                       my: 0.5,
                       color: "black",

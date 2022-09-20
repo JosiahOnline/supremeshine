@@ -7,7 +7,7 @@ import { Container } from "@mui/material";
 export default function MediaCard() {
   return (
     <Container
-      maxWidth="lg"
+      maxWidth="md"
       sx={{
         display: "flex",
         justifyContent: "center",
@@ -18,7 +18,7 @@ export default function MediaCard() {
     >
       <CardMedia
         component="img"
-        height="550px"
+        height="400px"
         image={Hero.src}
         alt="Professional"
       />
