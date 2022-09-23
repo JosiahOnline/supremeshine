@@ -89,7 +89,6 @@ const NavBar = () => {
             {pages.map((page) => (
               <Button
                 href={`/#${page}`}
-                scroll={false}
                 key={page}
                 onClick={handleCloseNavMenu}
                 sx={{
@@ -150,7 +149,6 @@ const NavBar = () => {
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
                   <Button
                     href={`#${page}`}
-                    scroll={false}
                     sx={{
                       my: 0.5,
                       color: "black",
