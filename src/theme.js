@@ -12,6 +12,12 @@ const theme = createTheme({
   //       }
   //     }
   //   },
+	typography: {
+    fontFamily: "Inter, sans-serif",
+		h2: {
+			fontWeight: 700,
+		},
+  },
 	palette: {
 		primary: {
 			main: '#2196f3',
@@ -26,9 +32,6 @@ const theme = createTheme({
 			main: 'rgb(255,211,51)',
 		},
 	},
-	typography: {
-    fontFamily: "Inter, sans-serif",
-  },
 });
 
 export default theme;

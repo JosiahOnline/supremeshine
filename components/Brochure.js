@@ -19,7 +19,7 @@ export default function Brochure() {
             border: 2,
             borderColor: "#0099b3",
             borderRadius: "15px",
-            padding: { xs: "30px 0px 10px", md: "25px"},
+            padding: { xs: "30px 25px 10px", md: "25px"},
           }}
         >
           <Grid>
@@ -37,7 +37,7 @@ export default function Brochure() {
                   padding: "0 15px",
                   position: "absolute",
                   top: {xs: -60, md: -55},
-                  left: {xs: 15, md: 0},
+                  left: {xs: -10, md: 0},
                 }}
               >
                 e-Brochure
@@ -48,13 +48,13 @@ export default function Brochure() {
           <Grid
             container
             direction="row"
-            justifyContent="center"
+            justifyContent="flex-start"
             alignItems="center"
-            spacing={4}
+            spacing={3}
           >
             <Grid
               item
-              xs={10}
+              xs={8}
               md={3}
               component="img"
               alt="e-Brochure"
@@ -62,7 +62,7 @@ export default function Brochure() {
               src={eBrochure.src}
             />
 
-            <Grid item xs={10} md={9}>
+            <Grid item xs={12} md={9}>
               <Typography component="div" align="left" variant="h6">
                 Our e-Brochure Product Catalogue 2022 is out! Find out more
                 about our products and what we offer in our latest e-Brochure. 
