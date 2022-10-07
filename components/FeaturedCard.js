@@ -4,11 +4,13 @@ import Link from "next/link";
 import styles from "../styles/General.module.css";
 import { createTheme, ThemeProvider } from "@material-ui/core/styles";
 import { responsiveFontSizes } from "@mui/material";
-export default function FeaturedCard({ category}) {
+export default function FeaturedCard({ category, index}) {
   let theme = createTheme();
   theme = responsiveFontSizes(theme);
+  // console.log(index)
   return (
     <Card
+      key={index}
       sx={{
         maxWidth: "300px",
         padding: "0",
@@ -27,8 +29,8 @@ export default function FeaturedCard({ category}) {
       />
       <ThemeProvider theme={theme}>
         <Typography
-          variant="h6"
-          height="80px"
+          variant="subtitle2"
+          height="60px"
           component="div"
           backgroundColor="rgb(255,211,51)"
           padding="10px"

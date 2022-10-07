@@ -82,7 +82,7 @@ export default function LabTabs() {
         <Typography
           variant="h4"
           component="div"
-          sx={{ padding: "40px 20px 20px 40px" }}
+          sx={{ padding: { xs: "0 0 20px 5px", md: "40px 20px 20px 0px"} }}
           className={styles.Heading}
         >
           Featured Products
@@ -120,14 +120,14 @@ export default function LabTabs() {
                 </ThemeProvider>
             </Box>
             {products.map((product, index) => (
-              <TabPanel value={product.id} key={index}>
+              <TabPanel value={product.id} key={index}  sx={{ padding: { xs: "20px 0", md: "30px 0"} }}>
                 <Grid
                   container direction="row" justifyContent="center" spacing={2} 
                 >
                   {product.categories.map((category, index) => (
                     
                     <Grid item key={index} xs={6} md={3}>
-                      <FeaturedCard category={category} />
+                      <FeaturedCard category={category} index={category.id} />
                     </Grid>
                   ))}
                 </Grid>
