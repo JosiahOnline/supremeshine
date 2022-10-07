@@ -17,9 +17,9 @@ export default function Brochure() {
             display: "flex",
             flexDirection: "column",
             border: 2,
-            borderColor: "rgb(255,211,51)",
+            borderColor: "#0099b3",
             borderRadius: "15px",
-            padding: { xs: "30px 0px", md: "25px"},
+            padding: { xs: "30px 0px 10px", md: "25px"},
           }}
         >
           <Grid>

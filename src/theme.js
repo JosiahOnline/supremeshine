@@ -22,6 +22,9 @@ const theme = createTheme({
 		error: {
 			main: red.A400,
 		},
+		info: {
+			main: 'rgb(255,211,51)',
+		},
 	},
 	typography: {
     fontFamily: "Inter, sans-serif",

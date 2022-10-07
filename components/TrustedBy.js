@@ -45,8 +45,8 @@ export default function TrustedBy() {
               <Box
                 component="img"
                 sx={{
-                  height: 200,
-                  width: 200,
+                  height: 130,
+                  width: 130,
                 }}
                 alt="The IOIGROUP"
                 src={IoIGroup.src}
@@ -58,8 +58,8 @@ export default function TrustedBy() {
             <Box
               component="img"
               sx={{
-                height: 200,
-                width: 200,
+                height: 130,
+                width: 130,
               }}
               alt="The IOIGROUP"
               src={Ijm.src}
@@ -70,8 +70,8 @@ export default function TrustedBy() {
             <Box
               component="img"
               sx={{
-                height: 200,
-                width: 200,
+                height: 130,
+                width: 130,
               }}
               alt="The IOIGROUP"
               src={SimeDarby.src}
@@ -82,8 +82,8 @@ export default function TrustedBy() {
             <Box
               component="img"
               sx={{
-                height: 200,
-                width: 200,
+                height: 130,
+                width: 130,
               }}
               alt="The IOIGROUP"
               src={Petron.src}
@@ -95,8 +95,8 @@ export default function TrustedBy() {
             <Box
               component="img"
               sx={{
-                height: 200,
-                width: 200,
+                height: 130,
+                width: 130,
               }}
               alt="The IOIGROUP"
               src={SabahSoftwoods.src}
@@ -108,8 +108,8 @@ export default function TrustedBy() {
             <Box
               component="img"
               sx={{
-                height: 200,
-                width: 200,
+                height: 130,
+                width: 130,
               }}
               alt="The IOIGROUP"
               src={TianSiang.src}
@@ -121,8 +121,8 @@ export default function TrustedBy() {
             <Box
               component="img"
               sx={{
-                height: 200,
-                width: 200,
+                height: 130,
+                width: 130,
               }}
               alt="The IOIGROUP"
               src={Wilmar.src}
@@ -134,8 +134,8 @@ export default function TrustedBy() {
             <Box
               component="img"
               sx={{
-                height: 200,
-                width: 200,
+                height: 130,
+                width: 130,
               }}
               alt="The IOIGROUP"
               src={Genting.src}
@@ -147,8 +147,8 @@ export default function TrustedBy() {
             <Box
               component="img"
               sx={{
-                height: 200,
-                width: 200,
+                height: 130,
+                width: 130,
               }}
               alt="The IOIGROUP"
               src={Bousted.src}
@@ -160,8 +160,8 @@ export default function TrustedBy() {
             <Box
               component="img"
               sx={{
-                height: 200,
-                width: 200,
+                height: 130,
+                width: 130,
               }}
               alt="KLK Berhad"
               src={KLK.src}
