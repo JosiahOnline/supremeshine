@@ -39,8 +39,11 @@ export default function Details() {
         ) => {
           if (name === id) {
             return (
-              <>
-                <Container maxWidth="md" key={index} sx={{ padding: "50px 15px" }}>
+              <Container
+                maxWidth="md"
+                key={index}
+                sx={{ padding: { xs: "20px 15px", md: "50px 15px"} }}
+              >
                 <ThemeProvider theme={theme}>
                   <Box
                     component="div"
@@ -62,7 +65,7 @@ export default function Details() {
                       />
                     </Link>
                     <Link href="/#Featured Products">
-                      <Typography variant="h4" sx={{ cursor: "pointer" }}>
+                      <Typography variant="h5" sx={{ cursor: "pointer" }}>
                         Back
                       </Typography>
                     </Link>
@@ -81,13 +84,13 @@ export default function Details() {
                       justifyContent="space-around"
                       alignItems="flex-start"
                     >
-                      <Grid item xs={12} md={6}>
+                      <Grid item xs={12} md={12}>
                         <Box
                           sx={{
                             border: 1,
-                            borderRadius: "15px",
+                            borderRadius: "10px",
                             borderColor: "rgb(255,211,51)",
-                            padding: "30px",
+                            padding: "30px 90px",
                           }}
                         >
                           <Image
@@ -99,22 +102,22 @@ export default function Details() {
                           />
                         </Box>
                         <Typography
-                          variant="h4"
+                          variant="h5"
                           align="center"
-                          sx={{ padding: "20px" }}
+                          sx={{ padding: { xs:"15px", md: '20px'} }}
                         >
                           {name}
                         </Typography>
                         <Box
                           sx={{
-                            borderRadius: "15px",
+                            borderRadius: "5px",
                             backgroundColor: "rgb(255,211,51)",
                           }}
                         >
                           <Typography
-                            variant="h5"
+                            variant="h6"
                             align="center"
-                            sx={{ padding: "20px" }}
+                            sx={{ padding: { xs:"15px", md: '20px'} }}
                           >
                             {description}
                           </Typography>
@@ -129,11 +132,16 @@ export default function Details() {
                             gap: "50px",
                           }}
                         >
-                          <Box sx={{ marginTop:  { md: "10px", xs: "50px" }, paddingLeft: "30px" }}>
-                            <Typography variant="h4" gutterBottom>
+                          <Box
+                            sx={{
+                              marginTop: { md: "10px", xs: "50px" },
+                              paddingLeft: "30px",
+                            }}
+                          >
+                            <Typography variant="h5" gutterBottom>
                               Features
                             </Typography>
-                            <Typography variant="h5" gutterBottom>
+                            <Typography variant="h6" gutterBottom>
                               - {feature1}
                               <br />- {feature2}
                               <br />- {feature3}
@@ -144,16 +152,16 @@ export default function Details() {
                           <Box
                             sx={{
                               border: 1,
-                              borderRadius: "15px",
+                              borderRadius: "5px",
                               borderColor: "rgb(255,211,51)",
                               padding: "30px",
                             }}
                           >
-                            <Typography variant="h4" gutterBottom>
+                            <Typography variant="h5" gutterBottom>
                               Technical Data
                             </Typography>
                             <Box sx={{ flex: 1, display: "flex", gap: "10px" }}>
-                              <Typography variant="h5" gutterBottom>
+                              <Typography variant="h6" gutterBottom>
                                 Flow (Q)
                                 <br />
                                 Head (H)
@@ -164,14 +172,14 @@ export default function Details() {
                                 <br />
                                 Solid Handling Capacity <br />
                               </Typography>
-                              <Typography variant="h5" gutterBottom>
+                              <Typography variant="h6" gutterBottom>
                                 :<br />
                                 :<br />
                                 :<br />
                                 :<br />
                                 :<br />
                               </Typography>
-                              <Typography variant="h5" gutterBottom>
+                              <Typography variant="h6" gutterBottom>
                                 {flow} <br />
                                 {head} <br />
                                 {temp} <br />
@@ -181,10 +189,10 @@ export default function Details() {
                             </Box>
                           </Box>
                           <Box sx={{ paddingLeft: "30px" }}>
-                            <Typography variant="h4" gutterBottom>
+                            <Typography variant="h5" gutterBottom>
                               Applications
                             </Typography>
-                            <Typography variant="h5" gutterBottom>
+                            <Typography variant="h6" gutterBottom>
                               - {application1}
                               <br />- {application2}
                               <br />- {application3}
@@ -195,15 +203,15 @@ export default function Details() {
                           <Box
                             sx={{
                               border: 1,
-                              borderRadius: "15px",
+                              borderRadius: "5px",
                               borderColor: "rgb(255,211,51)",
                               padding: "30px",
                             }}
                           >
-                            <Typography variant="h4" gutterBottom>
+                            <Typography variant="h5" gutterBottom>
                               Model
                             </Typography>
-                            <Typography variant="h5" gutterBottom>
+                            <Typography variant="h6" gutterBottom>
                               - {mode1}
                               <br />- {mode2}
                               <br />- {mode3}
@@ -215,9 +223,8 @@ export default function Details() {
                       </Grid>
                     </Grid>
                   </Box>
-                  </ThemeProvider>
-                </Container>
-              </>
+                </ThemeProvider>
+              </Container>
             );
           }
         }

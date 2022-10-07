@@ -18,7 +18,7 @@ export default function Brochure() {
             flexDirection: "column",
             border: 2,
             borderColor: "#0099b3",
-            borderRadius: "15px",
+            borderRadius: "5px",
             padding: { xs: "30px 25px 10px", md: "25px"},
           }}
         >

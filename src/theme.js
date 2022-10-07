@@ -12,12 +12,7 @@ const theme = createTheme({
   //       }
   //     }
   //   },
-	typography: {
-    fontFamily: "Inter, sans-serif",
-		h2: {
-			fontWeight: 700,
-		},
-  },
+	
 	palette: {
 		primary: {
 			main: '#2196f3',
@@ -30,6 +25,16 @@ const theme = createTheme({
 		},
 		info: {
 			main: 'rgb(255,211,51)',
+		},
+	},
+	overrides: {
+		MuiTypography: {
+			fontFamily: "Inter, sans-serif",
+			h2: {
+				'&.MuiTypography-h2':{
+					fontWeight: 700,
+				}
+			},
 		},
 	},
 });

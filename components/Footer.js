@@ -28,13 +28,13 @@ export default function Footer() {
           Contact Us
         </Typography>
         <Grid container justifyContent="center" alignItems="center" alignContent='center'>
-          <Grid item xs={6} md={6}>
-            <Typography variant="h5" align="right" gutterBottom>
+          <Grid item xs={5} md={5} align='right' sx={{paddingTop: '15px'}}>
+            <LocationOnIcon fontSize="large"/>
+          </Grid>
+          <Grid item xs={6} md={6} sx={{paddingTop: '15px'}}>
+            <Typography variant="h5" align="left" gutterBottom>
               Address
             </Typography>
-          </Grid>
-          <Grid item xs={6} md={6}>
-            <LocationOnIcon fontSize="large"/>
           </Grid>
           <Grid item xs={12}>
             <Typography variant="h6" align="center" gutterBottom>
@@ -42,26 +42,26 @@ export default function Footer() {
               Sabah.
             </Typography>
           </Grid>
-          <Grid item xs={6} md={6}>
-            <Typography variant="h5" align="right" gutterBottom>
+          <Grid item xs={5} md={5} align='right' sx={{paddingTop: '15px'}}>
+            <PhoneIphoneIcon fontSize="large"/>
+          </Grid>
+          <Grid item xs={6} md={6} sx={{paddingTop: '15px'}}>
+            <Typography variant="h5" align="left" gutterBottom>
               Mobile
             </Typography>
-          </Grid>
-          <Grid item xs={6} md={6}>
-            <PhoneIphoneIcon fontSize="large"/>
           </Grid>
           <Grid item xs={12}>
             <Typography variant="h6" align="center" gutterBottom>
               +6013-883-0602
             </Typography>
           </Grid>
-          <Grid item xs={6} md={6}>
-            <Typography variant="h5" align="right">
+          <Grid item xs={5} md={5} align='right' sx={{paddingTop: '15px'}}>
+            <EmailIcon fontSize="large"/>
+          </Grid>
+          <Grid item xs={6} md={6} sx={{paddingTop: '10px'}}>
+            <Typography variant="h5" align="left" >
               Email
             </Typography>
-          </Grid>
-          <Grid item xs={6} md={6}>
-            <EmailIcon fontSize="large"/>
           </Grid>
           <Grid item xs={12}>
             <Typography variant="h6" align="center" gutterBottom>
