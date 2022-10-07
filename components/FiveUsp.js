@@ -9,13 +9,8 @@ import AssignmentIndIcon from "@mui/icons-material/AssignmentInd";
 import LocalFireDepartmentIcon from "@mui/icons-material/LocalFireDepartment";
 import { Container } from "@mui/system";
 
-import { useScrollTrigger, Slide } from "@material-ui/core";
 export default function FiveUsp() {
-  const trigger = useScrollTrigger({
-    disableHysteresis: true,
-    threshold: Card.threshold,
-    target: Card.window ? window() : undefined
-  });
+  
   return (
     <Container maxWidth="lg">
       <Box
@@ -31,7 +26,7 @@ export default function FiveUsp() {
           padding: "30px",
         }}
       >
-        <Slide direction="right" appear={false} in={trigger} {...(trigger ? { timeout: 1000 } : {})}mountOnEnter unmountOnExit>
+        <Box >
           <Card
             sx={{
               display: "flex",
@@ -64,8 +59,8 @@ export default function FiveUsp() {
               </Typography>
             </Box>
           </Card>
-        </Slide>
-        <Slide direction="left" appear={false} in={trigger} {...(trigger ? { timeout: 1500 } : {})}mountOnEnter unmountOnExit>
+        </Box>
+        <Box>
           <Card
             sx={{
               display: "flex",
@@ -100,8 +95,8 @@ export default function FiveUsp() {
               </Typography>
             </Box>
           </Card>
-        </Slide>
-        <Slide direction="right" appear={false} in={trigger} {...(trigger ? { timeout: 2000 } : {})}mountOnEnter unmountOnExit>
+        </Box>
+        <Box>
           <Card
             sx={{
               display: "flex",
@@ -136,8 +131,8 @@ export default function FiveUsp() {
               </Typography>
             </Box>
           </Card>
-        </Slide>
-        <Slide direction="left" appear={false} in={trigger} {...(trigger ? { timeout: 2500 } : {})}mountOnEnter unmountOnExit>
+        </Box>
+        <Box>
           <Card
             sx={{
               display: "flex",
@@ -173,8 +168,8 @@ export default function FiveUsp() {
               </Typography>
             </Box>
           </Card>
-        </Slide>
-        <Slide direction="right" appear={false} in={trigger} {...(trigger ? { timeout: 3000 } : {})}mountOnEnter unmountOnExit>
+        </Box>
+        <Box>
           <Card
             sx={{
               display: "flex",
@@ -210,7 +205,7 @@ export default function FiveUsp() {
               </Typography>
             </Box>
           </Card>
-        </Slide>
+        </Box>
       </Box>
     </Container>
   );

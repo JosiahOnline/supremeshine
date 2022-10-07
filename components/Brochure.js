@@ -12,7 +12,6 @@ export default function Brochure() {
     <Container maxWidth="md">
       <ThemeProvider theme={theme}>
         <Box
-          container
           id="e-Brochure"
           sx={{
             display: "flex",

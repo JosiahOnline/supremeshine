@@ -9,23 +9,15 @@ import TianSiang from "../public/clients/TianSiang.png";
 import Wilmar from "../public/clients/wilmar.png";
 import Genting from "../public/clients/Genting.png";
 import Bousted from "../public/clients/Bousted.png";
+import KLK from "../public/clients/KLK.png";
 import { Grid, Grow, useScrollTrigger } from "@material-ui/core";
 import { createTheme, ThemeProvider } from "@material-ui/core/styles";
 import { responsiveFontSizes } from "@mui/material";
 
-export default function TrustedBy(props) {
+export default function TrustedBy() {
   let theme = createTheme();
   theme = responsiveFontSizes(theme);
 
-  const { threshold } = {
-    threshold: 1000,
-    ...props,
-  };
-  const trigger = useScrollTrigger({
-    disableHysteresis: true,
-    threshold: threshold,
-    target: props.window ? window() : undefined,
-  });
   return (
     <ThemeProvider theme={theme}>
     <Box sx={{ margin: "30px 0", backgroundColor: "#f5f5f5", padding:"50px 0" }}>
@@ -48,15 +40,6 @@ export default function TrustedBy(props) {
       </Grid>
       <Grid container justifyContent="center" alignItems="center">
         <Grid item xs={6} md={3}>
-          <Grow
-            appear={true}
-            direction="down"
-            in={trigger}
-            style={{ transformOrigin: "0 0 0" }}
-            {...(trigger ? { timeout: 500 } : {})}
-            mountOnEnter
-            unmountOnExit
-          >
             <Box display="flex" justifyContent="center" alignItems="center">
               <Box
                 component="img"
@@ -68,18 +51,9 @@ export default function TrustedBy(props) {
                 src={IoIGroup.src}
               />
             </Box>
-          </Grow>
         </Grid>
         <Grid item xs={6} md={3}>
-          <Grow
-            appear={true}
-            direction="down"
-            in={trigger}
-            style={{ transformOrigin: "0 0 0" }}
-            {...(trigger ? { timeout: 1000 } : {})}
-            mountOnEnter
-            unmountOnExit
-          ><Box display="flex" justifyContent="center" alignItems="center">
+          <Box display="flex" justifyContent="center" alignItems="center">
             <Box
               component="img"
               sx={{
@@ -89,18 +63,9 @@ export default function TrustedBy(props) {
               alt="The IOIGROUP"
               src={Ijm.src}
             /></Box>
-          </Grow>
         </Grid>
         <Grid item xs={6} md={3}>
-          <Grow
-            appear={true}
-            direction="down"
-            in={trigger}
-            style={{ transformOrigin: "0 0 0" }}
-            {...(trigger ? { timeout: 1500 } : {})}
-            mountOnEnter
-            unmountOnExit
-          ><Box display="flex" justifyContent="center" alignItems="center">
+          <Box display="flex" justifyContent="center" alignItems="center">
             <Box
               component="img"
               sx={{
@@ -110,18 +75,9 @@ export default function TrustedBy(props) {
               alt="The IOIGROUP"
               src={SimeDarby.src}
             /></Box>
-          </Grow>
         </Grid>
         <Grid item xs={6} md={3}>
-          <Grow
-            appear={true}
-            direction="down"
-            in={trigger}
-            style={{ transformOrigin: "0 0 0" }}
-            {...(trigger ? { timeout: 2000 } : {})}
-            mountOnEnter
-            unmountOnExit
-          ><Box display="flex" justifyContent="center" alignItems="center">
+          <Box display="flex" justifyContent="center" alignItems="center">
             <Box
               component="img"
               sx={{
@@ -131,18 +87,10 @@ export default function TrustedBy(props) {
               alt="The IOIGROUP"
               src={Petron.src}
             /></Box>
-          </Grow>
+          
         </Grid>
         <Grid item xs={6} md={3}>
-          <Grow
-            appear={true}
-            direction="down"
-            in={trigger}
-            style={{ transformOrigin: "0 0 0" }}
-            {...(trigger ? { timeout: 2500 } : {})}
-            mountOnEnter
-            unmountOnExit
-          ><Box display="flex" justifyContent="center" alignItems="center">
+          <Box display="flex" justifyContent="center" alignItems="center">
             <Box
               component="img"
               sx={{
@@ -152,18 +100,10 @@ export default function TrustedBy(props) {
               alt="The IOIGROUP"
               src={SabahSoftwoods.src}
             /></Box>
-          </Grow>
+          
         </Grid>
         <Grid item xs={6} md={3}>
-          <Grow
-            appear={true}
-            direction="down"
-            in={trigger}
-            style={{ transformOrigin: "0 0 0" }}
-            {...(trigger ? { timeout: 3000 } : {})}
-            mountOnEnter
-            unmountOnExit
-          ><Box display="flex" justifyContent="center" alignItems="center">
+          <Box display="flex" justifyContent="center" alignItems="center">
             <Box
               component="img"
               sx={{
@@ -173,18 +113,10 @@ export default function TrustedBy(props) {
               alt="The IOIGROUP"
               src={TianSiang.src}
             /></Box>
-          </Grow>
+          
         </Grid>
         <Grid item xs={6} md={3}>
-          <Grow
-            appear={true}
-            direction="down"
-            in={trigger}
-            style={{ transformOrigin: "0 0 0" }}
-            {...(trigger ? { timeout: 3500 } : {})}
-            mountOnEnter
-            unmountOnExit
-          ><Box display="flex" justifyContent="center" alignItems="center">
+          <Box display="flex" justifyContent="center" alignItems="center">
             <Box
               component="img"
               sx={{
@@ -194,18 +126,10 @@ export default function TrustedBy(props) {
               alt="The IOIGROUP"
               src={Wilmar.src}
             /></Box>
-          </Grow>
+          
         </Grid>
         <Grid item xs={6} md={3}>
-          <Grow
-            appear={true}
-            direction="down"
-            in={trigger}
-            style={{ transformOrigin: "0 0 0" }}
-            {...(trigger ? { timeout: 4000 } : {})}
-            mountOnEnter
-            unmountOnExit
-          ><Box display="flex" justifyContent="center" alignItems="center">
+          <Box display="flex" justifyContent="center" alignItems="center">
             <Box
               component="img"
               sx={{
@@ -215,18 +139,10 @@ export default function TrustedBy(props) {
               alt="The IOIGROUP"
               src={Genting.src}
             /></Box>
-          </Grow>
+          
         </Grid>
         <Grid item xs={6} md={3}>
-          <Grow
-            appear={true}
-            direction="down"
-            in={trigger}
-            style={{ transformOrigin: "0 0 0" }}
-            {...(trigger ? { timeout: 4500 } : {})}
-            mountOnEnter
-            unmountOnExit
-          ><Box display="flex" justifyContent="center" alignItems="center">
+          <Box display="flex" justifyContent="center" alignItems="center">
             <Box
               component="img"
               sx={{
@@ -236,7 +152,20 @@ export default function TrustedBy(props) {
               alt="The IOIGROUP"
               src={Bousted.src}
             /></Box>
-          </Grow>
+          
+        </Grid>
+        <Grid item xs={6} md={3}>
+          <Box display="flex" justifyContent="center" alignItems="center">
+            <Box
+              component="img"
+              sx={{
+                height: 200,
+                width: 200,
+              }}
+              alt="KLK Berhad"
+              src={KLK.src}
+            /></Box>
+          
         </Grid>
       </Grid>
     </Box></ThemeProvider>

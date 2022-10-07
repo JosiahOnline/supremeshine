@@ -1,5 +1,5 @@
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
+// import styles from "../styles/Home.module.css";
 import NavBar from "../components/Navbar";
 import MediaCard from "../components/MainHero";
 import FiveUsp from "../components/FiveUsp"
@@ -12,7 +12,7 @@ import Footer from "../components/Footer";
 export default function Home() {
 	return (
     <Fragment >
-		<div className={styles.container}>
+		{/* <div className={styles.container}> */}
 			<Head>
 				<title>Supreme Evershine</title>
 				<link rel="icon" href="/Logo.png" />
@@ -24,7 +24,7 @@ export default function Home() {
 			<FeaturedProducts />
 			<Brochure />
 			<Footer />
-		</div>
+		{/* </div> */}
     </Fragment>
 	);
 }

@@ -124,10 +124,10 @@ export default function LabTabs() {
                   container direction="row" justifyContent="center" spacing={2} 
                 >
                   {product.categories.map((category, index) => (
-                    <>
+                    
                     <Grid item key={index} xs={6} md={3}>
-                      <FeaturedCard category={category} key={index} />
-                    </Grid></>
+                      <FeaturedCard category={category} />
+                    </Grid>
                   ))}
                 </Grid>
               </TabPanel>
