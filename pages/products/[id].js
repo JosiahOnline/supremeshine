@@ -42,7 +42,7 @@ export default function Details() {
               <Container
                 maxWidth="md"
                 key={index}
-                sx={{ padding: { xs: "20px 15px", md: "50px 15px"} }}
+                sx={{ padding: { xs: "20px 15px", sm: "10px 15px"} }}
               >
                 <ThemeProvider theme={theme}>
                   <Box
@@ -52,7 +52,7 @@ export default function Details() {
                       justifyContent: "flex-start",
                       gap: "10px",
                       alignItems: "center",
-                      marginBottom: { md: "50px", xs: "20px" },
+                      marginBottom: { xs: "20px", sm: "50px" },
                     }}
                   >
                     <Link href="/#Featured Products">
@@ -84,7 +84,7 @@ export default function Details() {
                       justifyContent="space-around"
                       alignItems="flex-start"
                     >
-                      <Grid item xs={12} md={12}>
+                      <Grid item xs={12} sm={6} md={5}>
                         <Box
                           sx={{
                             border: 1,
@@ -104,7 +104,7 @@ export default function Details() {
                         <Typography
                           variant="h5"
                           align="center"
-                          sx={{ padding: { xs:"15px", md: '20px'} }}
+                          sx={{ padding: { xs:"15px", sm: '20px'} }}
                         >
                           {name}
                         </Typography>
@@ -117,13 +117,13 @@ export default function Details() {
                           <Typography
                             variant="h6"
                             align="center"
-                            sx={{ padding: { xs:"15px", md: '20px'} }}
+                            sx={{ padding: { xs:"15px", sm: '20px'} }}
                           >
                             {description}
                           </Typography>
                         </Box>
                       </Grid>
-                      <Grid item xs={12} md={6}>
+                      <Grid item xs={12} sm={5} md={5}>
                         <Box
                           sx={{
                             flex: 1,
@@ -134,7 +134,7 @@ export default function Details() {
                         >
                           <Box
                             sx={{
-                              marginTop: { md: "10px", xs: "50px" },
+                              marginTop: { xs: "50px", sm: "10px"},
                               paddingLeft: "30px",
                             }}
                           >
