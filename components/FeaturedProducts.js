@@ -59,13 +59,14 @@ export default function LabTabs() {
       id="Featured Products"
       maxWidth="md"
       sx={{
-        marginTop: "40px",
-        marginBottom: "40px",
+        marginTop: "30px",
+        marginBottom: "80px",
         display: "flex",
         justifyContent: "center",
         alignContent: "center",
         flexDirection: "column",
         alignItems: "center",
+        padding:"30px 0",
       }}
     >
       <Box

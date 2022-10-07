@@ -20,60 +20,55 @@ export default function Footer() {
         id="Contact Us"
         sx={{
           backgroundColor: "rgb(255,211,51)",
-          padding: "30px 30px 70px 30px",
+          padding: "50px 30px",
           marginTop: "80px",
-          paddingTop: "50px"
         }}
       >
-        <Typography variant="h2" component="div">
+        <Typography variant="h2" gutterBottom>
           Contact Us
         </Typography>
-        <Container maxWidth="md">
-          <Grid
-            container
-            sx={{
-              marginTop: "30px",
-              marginBottom: "15px",
-            }}
-          >
-            <Typography
-              variant="h4"
-              component="div"
-              sx={{ textAlign: "left", paddingLeft: "10px" }}
-            >
-              Address: Jalan Lintas Sibuga, lintas indsutrial park, 90000
-              Sandakan, Sabah.
+        <Grid container justifyContent="center" alignItems="center" alignContent='center'>
+          <Grid item xs={6} md={6}>
+            <Typography variant="h5" align="right" gutterBottom>
+              Address
             </Typography>
           </Grid>
-          <Grid
-            container
-            sx={{
-              marginBottom: "15px",
-            }}
-          >
-            <Typography
-              variant="h4"
-              component="div"
-              sx={{ textAlign: "left", paddingLeft: "10px" }}
-            >
-              Mobile: +6013-883-0602
+          <Grid item xs={6} md={6}>
+            <LocationOnIcon fontSize="large"/>
+          </Grid>
+          <Grid item xs={12}>
+            <Typography variant="h6" align="center" gutterBottom>
+              Jalan Lintas Sibuga, lintas indsutrial park, 90000 Sandakan,
+              Sabah.
             </Typography>
           </Grid>
-          <Grid
-            container
-            sx={{
-              marginBottom: "15px",
-            }}
-          >
-            <Typography
-              variant="h4"
-              component="div"
-              sx={{ textAlign: "left", paddingLeft: "10px" }}
-            >
-              Email: sales-supreme-evershine@gmail.com
+          <Grid item xs={6} md={6}>
+            <Typography variant="h5" align="right" gutterBottom>
+              Mobile
             </Typography>
           </Grid>
-        </Container>
+          <Grid item xs={6} md={6}>
+            <PhoneIphoneIcon fontSize="large"/>
+          </Grid>
+          <Grid item xs={12}>
+            <Typography variant="h6" align="center" gutterBottom>
+              +6013-883-0602
+            </Typography>
+          </Grid>
+          <Grid item xs={6} md={6}>
+            <Typography variant="h5" align="right">
+              Email
+            </Typography>
+          </Grid>
+          <Grid item xs={6} md={6}>
+            <EmailIcon fontSize="large"/>
+          </Grid>
+          <Grid item xs={12}>
+            <Typography variant="h6" align="center" gutterBottom>
+              sales-supreme-evershine@gmail.com
+            </Typography>
+          </Grid>
+        </Grid>
       </Grid>
     </ThemeProvider>
   );

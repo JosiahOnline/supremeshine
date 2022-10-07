@@ -9,17 +9,17 @@ let theme = createTheme();
 theme = responsiveFontSizes(theme);
 export default function Brochure() {
   return (
-    <Container maxWidth="md">
+    <Container maxWidth="md"  id="e-Brochure">
       <ThemeProvider theme={theme}>
         <Box
-          id="e-Brochure"
+         
           sx={{
             display: "flex",
             flexDirection: "column",
             border: 2,
             borderColor: "rgb(255,211,51)",
             borderRadius: "15px",
-            padding: "25px",
+            padding: { xs: "30px 0px", md: "25px"},
           }}
         >
           <Grid>
@@ -36,9 +36,8 @@ export default function Brochure() {
                   backgroundColor: "white",
                   padding: "0 15px",
                   position: "absolute",
-                  top: -55,
-                  left: "3.5%",
-                  zIndex: "tooltip",
+                  top: {xs: -60, md: -55},
+                  left: {xs: 15, md: 0},
                 }}
               >
                 e-Brochure
@@ -64,12 +63,13 @@ export default function Brochure() {
             />
 
             <Grid item xs={10} md={9}>
-              <Typography component="div" align="left" variant="h4">
+              <Typography component="div" align="left" variant="h6">
                 Our e-Brochure Product Catalogue 2022 is out! Find out more
                 about our products and what we offer in our latest e-Brochure. 
                 Simply click below download button and fill out your details.
               </Typography>
               <Button
+                size='small'
                 variant="contained"
                 href="https://forms.gle/wPacsBn4KE2n1QyB9"
                 target="_blank"

@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Typography } from "@mui/material";
+import { Box, Container, Typography } from "@mui/material";
 import IoIGroup from "../public/clients/ioiGroup.png";
 import Ijm from "../public/clients/ijm.png";
 import SimeDarby from "../public/clients/SimeDarby.png";
@@ -20,13 +20,13 @@ export default function TrustedBy() {
 
   return (
     <ThemeProvider theme={theme}>
-    <Box sx={{ margin: "30px 0", backgroundColor: "#f5f5f5", padding:"50px 0" }}>
+    <Container sx={{ margin: "30px 0", backgroundColor: "#f5f5f5", padding:"30px 0" }}>
       <Grid container direction="column" justifyContent="center" alignItems="center"
       >
         <Typography
           variant="h2"
           component="div"
-          sx={{ color: "rgb(255,211,51)", fontWeight: "bold", textAlign:"center"}}
+          sx={{ color: "rgb(255,211,51)", fontWeight: "bold", textAlign:"center", padding:"50px 0 0"}}
         >
           TRUSTED BY
         </Typography>
@@ -34,6 +34,7 @@ export default function TrustedBy() {
           variant="h4"
           component="div"
           sx={{ color: "#152934", fontWeight: "bold", textAlign:"center"}}
+          gutterBottom
         >
           Happy clients since 2002!
         </Typography>
@@ -168,6 +169,6 @@ export default function TrustedBy() {
           
         </Grid>
       </Grid>
-    </Box></ThemeProvider>
+    </Container></ThemeProvider>
   );
 }
