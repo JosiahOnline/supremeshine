@@ -7,7 +7,7 @@
         "id": 1,
         "name": "SK & SKL Series",
         "alt": "SK & SKL Series",
-        "image": "../skseries/Skpseries.png"
+        "image": "../skseries/Skseries.png"
       },
       {
         "id": 2,
@@ -26,6 +26,48 @@
         "name": "SKWT SERIES",
         "alt": "SKWT SERIES",
         "image": "../skseries/Skwtseries.png"
+      },
+      {
+        "id": 5,
+        "name": "SKMS SERIES",
+        "alt": "SKMS Series",
+        "image": "../skseries/SKMSseries.png"
+      },
+      {
+        "id": 6,
+        "name": "SK 168",
+        "alt": "CHEMICAL DOSING PUMP SK 168/188D",
+        "image": "../skseries/ChemicalDosingPumpSK.png"
+      },
+      {
+        "id": 7,
+        "name": "SK 368 SERIES",
+        "alt": "CHEMICAL DIAPHRAGM PUMP SK 368 SERIES",
+        "image": "../skseries/ChemicalDiaphragmPumpSK368Series.png"
+      },
+      {
+        "id": 8,
+        "name": "SKVSP SERIES",
+        "alt": "VERTICAL SUMP PUMP SKVSP SERIES",
+        "image": "../skseries/VerticalSumpPumpSKVSPSeries.png"
+      },
+      {
+        "id": 9,
+        "name": "PRE-CLEANER SYSTEM",
+        "alt": "PRE-CLEANER SYSTEM",
+        "image": "../skseries/PreCleanerSystem.png"
+      },
+      {
+        "id": 10,
+        "name": "SKOSP SERIES",
+        "alt": "SKOSP SERIES",
+        "image": "../skseries/SKOSPSeries.png"
+      },
+      {
+        "id": 11,
+        "name": "SK MIXER SERIES",
+        "alt": "SK MIXER & AGITATOR",
+        "image": "../skseries/SKMixerSeries.png"
       }
     ]
   },

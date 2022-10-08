@@ -1,4 +1,4 @@
-import { products } from "../../data";
+import { products } from "../../dataDetails";
 import ArrowCircleLeftIcon from "@mui/icons-material/ArrowCircleLeft";
 import Image from "next/image";
 
@@ -52,7 +52,7 @@ export default function Details() {
                       justifyContent: "flex-start",
                       gap: "10px",
                       alignItems: "center",
-                      marginBottom: { xs: "20px", sm: "50px" },
+                      marginBottom: { xs: "20px", sm: "20px" },
                     }}
                   >
                     <Link href="/#Featured Products">

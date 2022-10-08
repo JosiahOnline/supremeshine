@@ -12,7 +12,7 @@ import {
 } from "@mui/material";
 import styles from "../styles/General.module.css";
 
-import products from "../src/data.json";
+import products from "../src/dataNames.json";
 
 import { createTheme, responsiveFontSizes } from "@mui/material";
 import { Grid } from "@material-ui/core";
@@ -122,7 +122,7 @@ export default function LabTabs() {
             {products.map((product, index) => (
               <TabPanel value={product.id} key={index}  sx={{ padding: { xs: "20px 0", md: "30px 0"} }}>
                 <Grid
-                  container direction="row" justifyContent="center" spacing={2} 
+                  container direction="row" justifyContent="flex-start" spacing={2} 
                 >
                   {product.categories.map((category, index) => (
                     

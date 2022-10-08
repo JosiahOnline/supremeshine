@@ -13,7 +13,8 @@ export default function MediaCard() {
         justifyContent: "center",
         flexDirection: "column",
         alignItems: "center",
-        padding: "0"
+        padding: "0",
+        marginTop: { xs: '60px', sm: '50px', md: '70px'}
       }}
     >
       <CardMedia
