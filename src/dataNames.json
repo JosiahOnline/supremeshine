@@ -73,31 +73,127 @@
   },
   {
     "id": "2",
+    "brand": "SK E-RO PUMP",
+    "categories": [
+      {
+        "id": 1,
+        "name": "VC SERIES",
+        "alt": "LIQUID RING VACUUM PUMP",
+        "image": "../skeroseries/VCSeries.png"
+      },
+      {
+        "id": 2,
+        "name": "BF SERIES",
+        "alt": "MULTI STAGE BOILER FEED WATER PUMP",
+        "image": "../skeroseries/BFSeries.png"
+      },
+      {
+        "id": 3,
+        "name": "OT SERIES",
+        "alt": "SIDE CHANNEL OIL TRANSFER PUMP",
+        "image": "../skeroseries/OTSeries.png"
+      },
+      {
+        "id": 4,
+        "name": "DT SERIES",
+        "alt": "VOLUTE CASING DEAERATOR PUMP",
+        "image": "../skeroseries/DTSeries.png"
+      }
+    ]
+  },
+  {
+    "id": "3",
     "brand": "SE-Tech",
     "categories": [
       {
+        "id": 1,
+        "name": "HORIZONTAL WOLTMAN FLOWMETER",
+        "alt": "COLD WATER HORIZONTAL WOLTMAN FLOWMETER",
+        "image": "../setech/WoltmanFlowmeter.png"
+      },
+      {
+        "id": 2,
+        "name": "ELECTROMAGNETIC FLOWMETER",
+        "alt": "ELECTROMAGNETIC FLOWMETER",
+        "image": "../setech/ElectromagneticFlowmeter.png"
+      },
+      {
+        "id": 3,
+        "name": "FLOWMETER CONTROLLER",
+        "alt": "FLOWMETER CONTROLLER",
+        "image": "../setech/FlowmeterController.png"
+      },
+      {
+        "id": 4,
+        "name": "NUT CRACKER",
+        "alt": "NUT CRACKER",
+        "image": "../setech/NutCracker.png"
+      },
+      {
         "id": 5,
-        "name": "Cold Water Horizontal Woltman Flowmeter",
-        "alt": "Cold Water Horizontal Woltman Flowmeter",
-        "image": "../setech/Cold Water Horizontal Woltman Flowmeter.png"
+        "name": "GAS DETECTOR",
+        "alt": "GAS DETECTOR",
+        "image": "../setech/GasDetector.png"
       },
       {
         "id": 6,
-        "name": "Electromagnetic Flowmeter",
-        "alt": "Electromagnetic Flowmeter",
-        "image": "../setech/Electromagnetic Flowmeter.png"
+        "name": "ULTRASONIC THICKNESS GAUG",
+        "alt": "ULTRASONIC THICKNESS GAUG",
+        "image": "../setech/UltrasonicGauge.png"
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "brand": "TRP",
+    "categories": [
+      {
+        "id": 1,
+        "name": "CONVEYOR CHAIN",
+        "alt": "CONVEYOR CHAIN",
+        "image": "../trp/PalmOilChain.png"
       },
       {
-        "id": 7,
-        "name": "Flowmeter Controller",
-        "alt": "Flowmeter Controller",
-        "image": "../setech/Flowmeter Controller.png"
+        "id": 2,
+        "name": "SPROCKETS",
+        "alt": "SPROCKETS",
+        "image": "../trp/Sprockets.png"
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "brand": "SEW EURODRIVE",
+    "categories": [
+      {
+        "id": 1,
+        "name": "MC SERIES",
+        "alt": "DIGESTER DRIVE",
+        "image": "../seweurodrive/MCSeries.png"
       },
       {
-        "id": 8,
-        "name": "Nut Cracker",
-        "alt": "Nut Cracker",
-        "image": "../setech/Nut Cracker.png"
+        "id": 2,
+        "name": "M SERIES",
+        "alt": "KERNEL EXPELLER DRIVES & EFB PRESS",
+        "image": "../seweurodrive/MSeries.png"
+      },
+      {
+        "id": 3,
+        "name": "CN SERIES",
+        "alt": "DIGESTER DRIVE",
+        "image": "../seweurodrive/CNSeries.png"
+      },
+      {
+        "id": 4,
+        "name": "R SERIES",
+        "alt": "HELICAL GEAR MOTORS",
+        "image": "../seweurodrive/RSeries.png"
+      },
+      {
+        "id": 5,
+        "name": "M SERIES SCREW PRESS DRIVE",
+        "alt": "SCREW PRESS DRIVE",
+        "image": "../seweurodrive/MSeriesScrew.png"
       }
     ]
   }

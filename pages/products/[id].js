@@ -96,8 +96,8 @@ export default function Details() {
                           <Image
                             src={image}
                             alt={name}
-                            width={200}
-                            height={200}
+                            width={0}
+                            height={0}
                             layout="responsive"
                           />
                         </Box>

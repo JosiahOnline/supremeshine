@@ -110,11 +110,11 @@ export default function LabTabs() {
                   }}
                 >
                   <Tab label="SK PUMP" value="1" />
-                  <Tab label="SE-TECH" value="2" />
-                  {/* <Tab label="Butterfly Valve" value="3" />
-                  <Tab label="SEW Euro Drive" value="4" />
-                  <Tab label="Category Five" value="5" />
-                  <Tab label="Category Six" value="6" />
+                  <Tab label="SK E-RO PUMP" value="2" />
+                  <Tab label="SE-TECH" value="3" />
+                  <Tab label="TRP" value="4" />
+                  <Tab label="SEW EURODRIVE" value="5" />
+                  {/*<Tab label="Category Six" value="6" />
                   <Tab label="Category Seven" value="7" /> */}
                 </TabList>
                 </ThemeProvider>
