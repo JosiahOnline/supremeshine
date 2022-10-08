@@ -541,7 +541,7 @@ export const products = [
   },
   {
     id: 16,
-    name: "HORIZONTAL WOLTMAN FLOWMETER",
+    name: "WOLTMAN FLOWMETER",
     image: "/setech/WoltmanFlowmeter.png",
     description: "COLD WATER HORIZONTAL WOLTMAN FLOWMETER",
     features: [
