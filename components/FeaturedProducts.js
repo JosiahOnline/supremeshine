@@ -114,8 +114,14 @@ export default function LabTabs() {
                   <Tab label="SE-TECH" value="3" />
                   <Tab label="TRP" value="4" />
                   <Tab label="SEW EURODRIVE" value="5" />
-                  {/*<Tab label="Category Six" value="6" />
-                  <Tab label="Category Seven" value="7" /> */}
+                  <Tab label="VALVE" value="6" />
+                  <Tab label="ENMIN" value="7" />
+                  <Tab label="CHECK VALVE" value="8" />
+                  <Tab label="COATING" value="9" />
+                  <Tab label="BEARING HOUSING" value="10" />
+                  <Tab label="IMPELLER" value="11" />
+                  <Tab label="SEAL HOUSING" value="12" />
+                  {/* <Tab label="SHAFT" value="13" /> */}
                 </TabList>
                 </ThemeProvider>
             </Box>
