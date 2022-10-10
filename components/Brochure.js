@@ -9,17 +9,16 @@ let theme = createTheme();
 theme = responsiveFontSizes(theme);
 export default function Brochure() {
   return (
-    <Container maxWidth="md"  id="e-Brochure">
+    <Container maxWidth="md" id="e-Brochure">
       <ThemeProvider theme={theme}>
         <Box
-         
           sx={{
             display: "flex",
             flexDirection: "column",
             border: 2,
             borderColor: "#0099b3",
             borderRadius: "5px",
-            padding: { xs: "30px 25px 10px", md: "25px"},
+            padding: { xs: "30px 25px 10px", md: "25px" },
           }}
         >
           <Grid>
@@ -36,8 +35,8 @@ export default function Brochure() {
                   backgroundColor: "white",
                   padding: "0 15px",
                   position: "absolute",
-                  top: {xs: -60, md: -55},
-                  left: {xs: -10, md: 0},
+                  top: { xs: -60, md: -55 },
+                  left: { xs: -10, md: 0 },
                 }}
               >
                 e-Brochure
@@ -65,13 +64,29 @@ export default function Brochure() {
             <Grid item xs={12} md={9}>
               <Typography component="div" align="left" variant="h6">
                 Our e-Brochure Product Catalogue 2022 is out! Find out more
-                about our products and what we offer in our latest e-Brochure. 
-                Simply click below download button and fill out your details.
+                about our products and what we offer in our latest e-Brochure.
+                Simply click below button (either Email or Whatsapp) and send us
+                your details and then we will send you the FREE copy of our
+                brochure in PDF format.
               </Typography>
               <Button
-                size='small'
+                size="small"
                 variant="contained"
                 href="https://forms.gle/wPacsBn4KE2n1QyB9"
+                target="_blank"
+                color="secondary"
+                sx={{
+                  my: 2,
+                  marginRight: 2,
+                  p: 1.5,
+                }}
+              >
+                Email
+              </Button>
+              <Button
+                size="small"
+                variant="contained"
+                href="https://wa.me/60179906278?text=Hello,%20I%20would%20like%20acopy%20of%20e-brochure%202022"
                 target="_blank"
                 color="secondary"
                 sx={{
@@ -79,7 +94,7 @@ export default function Brochure() {
                   p: 1.5,
                 }}
               >
-                Download
+                Whatsapp
               </Button>
             </Grid>
           </Grid>

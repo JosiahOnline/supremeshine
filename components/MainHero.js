@@ -2,7 +2,7 @@ import React from "react";
 import CardMedia from "@mui/material/CardMedia";
 import Hero from "../public/pic2.jpg";
 import Typography from "@mui/material/Typography";
-import { Container } from "@mui/material";
+import { Box, Container } from "@mui/material";
 
 export default function MediaCard() {
   return (
@@ -14,7 +14,7 @@ export default function MediaCard() {
         flexDirection: "column",
         alignItems: "center",
         padding: "0",
-        marginTop: { xs: '60px', sm: '50px', md: '70px'}
+        marginTop: { xs: "60px", sm: "50px", md: "70px" },
       }}
     >
       <CardMedia
@@ -41,6 +41,18 @@ export default function MediaCard() {
       >
         Together We Help, We Grow, We Prosper!
       </Typography>
+      <Box sx={{ marginTop: {xs:'30px', sm:'40px'}, height: {xs: '230px', sm: '510px'} }}>
+        <iframe
+          width="100%"
+          height="100%"
+          src="https://www.youtube.com/embed/ZER6zKx7e84"
+          
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+      </Box>
     </Container>
   );
 }
