@@ -8,6 +8,7 @@ import TrustedBy from "../components/TrustedBy";
 import { Fragment } from "react";
 import Brochure from '../components/Brochure'
 import Footer from "../components/Footer";
+import Categories from "../components/Categories";
 
 export default function Home() {
 	return (
@@ -22,6 +23,7 @@ export default function Home() {
 			<FiveUsp />
 			<TrustedBy />
 			<FeaturedProducts />
+			<Categories />
 			<Brochure />
 			<Footer />
 		{/* </div> */}

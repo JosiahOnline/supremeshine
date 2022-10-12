@@ -12,7 +12,7 @@ import {
 } from "@mui/material";
 import styles from "../styles/General.module.css";
 
-import products from "../src/dataNames.json";
+import products from "../src/categoriesNames.json";
 
 import { createTheme, responsiveFontSizes } from "@mui/material";
 import { Grid } from "@material-ui/core";
@@ -47,7 +47,7 @@ let theme = createTheme({
 
 theme = responsiveFontSizes(theme);
 
-export default function FeaturedProducts() {
+export default function Categories() {
   const [value, setValue] = React.useState("1");
 
   const handleChange = (event, newValue) => {
@@ -56,9 +56,10 @@ export default function FeaturedProducts() {
 
   return (
     <Container
-      id="Featured Products"
+      id="Categories"
       maxWidth="md"
       sx={{
+        marginBottom: "50px",
         display: "flex",
         justifyContent: "center",
         alignContent: "center",
@@ -83,7 +84,7 @@ export default function FeaturedProducts() {
           sx={{ padding: { xs: "0 0 20px 5px", md: "40px 20px 20px 0px"} }}
           className={styles.Heading}
         >
-          Featured Products
+          Categories
         </Typography>
 
         <Box
@@ -107,19 +108,24 @@ export default function FeaturedProducts() {
                     },
                   }}
                 >
-                  <Tab label="SK PUMP" value="1" />
-                  <Tab label="SK E-RO PUMP" value="2" />
-                  <Tab label="SE-TECH" value="3" />
-                  <Tab label="TRP" value="4" />
-                  <Tab label="SEW EURODRIVE" value="5" />
-                  {/* <Tab label="VALVE" value="6" />
-                  <Tab label="ENMIN" value="7" />
-                  <Tab label="CHECK VALVE" value="8" />
-                  <Tab label="COATING" value="9" />
-                  <Tab label="BEARING HOUSING" value="10" />
-                  <Tab label="IMPELLER" value="11" />
-                  <Tab label="SEAL HOUSING" value="12" /> */}
-                  {/* <Tab label="SHAFT" value="13" /> */}
+                  <Tab label="VALVE" value="1" />
+                  <Tab label="ENMIN" value="2" />
+                  <Tab label="CHECK VALVE" value="3" />
+                  <Tab label="COATING" value="4" />
+                  <Tab label="BEARING HOUSING" value="5" />
+                  <Tab label="IMPELLER" value="6" />
+                  <Tab label="SEAL HOUSING" value="7" />
+                  <Tab label="SHAFT" value="8" />
+                  <Tab label="SHAFT SLEEVE" value="9" />
+                  <Tab label="RECORDING CHART" value="10" />
+                  <Tab label="BOILER" value="11" />
+                  <Tab label="MECHANICAL SEAL" value="12" />
+                  <Tab label="DIGESTER" value="13" />
+                  <Tab label="DESANDER" value="14" />
+                  <Tab label="SCREW PRESS" value="15" />
+                  <Tab label="VIBRATING SCREEN" value="16" />
+                  <Tab label="COUPLING" value="17" />
+                  <Tab label="MOTOLOGY" value="18" />
                 </TabList>
                 </ThemeProvider>
             </Box>
